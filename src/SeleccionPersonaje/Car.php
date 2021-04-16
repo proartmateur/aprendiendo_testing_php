@@ -18,6 +18,26 @@ class Car
     private $handling;
     private $grip;
 
+    /**
+     * Car constructor.
+     * @param $id
+     * @param $speed
+     * @param $acceleration
+     * @param $weight
+     * @param $handling
+     * @param $grip
+     */
+    public function __construct($id, $speed, $acceleration, $weight, $handling, $grip)
+    {
+        $this->id = $id;
+        $this->speed = $speed;
+        $this->acceleration = $acceleration;
+        $this->weight = $weight;
+        $this->handling = $handling;
+        $this->grip = $grip;
+    }
+
+
     public function selectParacaidas(){}
     public function selectWheels(){}
     public function selectBody(){}
